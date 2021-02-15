@@ -13,4 +13,4 @@
   
 ## Solution ##
 
-Since the cat command sees '-' as a synonym for stdin, we must tell the cat command that '-' is a file in the current directory. We do this by prefixing the '-' file with './'. This makes the successful command `cat ./-`.
+Since the cat command sees '-' as a synonym for stdin, we must tell the cat command that '-' is a file in the current directory. We do this by prefixing the '-' file with './'. This makes the successful command `cat ./-`, giving us a password of CV1DtqXWVFXTvM2F0k09SHz0YwRINYA9.
