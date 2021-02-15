@@ -6,7 +6,7 @@ The password for the next level is stored in a file called readme located in the
 
 ## Commands you may need to solve this level ##
 
-ssh, ls, cd, cat, file, du, find
+    ssh, ls, cd, cat, file, du, find
 
 ## Solution ##
 
