@@ -15,4 +15,4 @@ Run a command as another user.
   Example: ./bandit20-do id
 ```
 
-Considering the name is 'bandit20-do' we can assume whatever command we run will be run as bandit20. Let's output the password using `./bandit20-do cat /etc/bandit_pass/bandit20`, and we getGbKksEFF4yrVs6il55v6gwY5aVje5f0j. 
+Considering the name is 'bandit20-do' we can assume whatever command we run will be run as bandit20. Let's output the password using `./bandit20-do cat /etc/bandit_pass/bandit20`, and we GbKksEFF4yrVs6il55v6gwY5aVje5f0j.
