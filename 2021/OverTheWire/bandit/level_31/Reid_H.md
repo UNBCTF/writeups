@@ -10,7 +10,7 @@ Clone the repository and find the password for the next level.
     
 ## Solution ##
 
-Same as previous levels for cloning the repo. The contents of the 'README.md' file say that we just need to push a certain file with certain contents to the origin. To do so, let's create the file with `echo 'May I come in?' > key.txt'. When we try to stage the file with `git add .`, we get a warning telling us that our path is listed in a .gitignore file. Let's override this by running `git add -f .`, commit our changes with `git commit -m "Hopefully this works..."` and push to the origin with `git push -u origin`. Now it'll return us this message with the password in the middle:
+Same as previous levels for cloning the repo. The contents of the 'README.md' file say that we just need to push a certain file with certain contents to the origin. To do so, let's create the file with `echo 'May I come in?' > key.txt`. When we try to stage the file with `git add .`, we get a warning telling us that our path is listed in a .gitignore file. Let's override this by running `git add -f .`, commit our changes with `git commit -m "Hopefully this works..."` and push to the origin with `git push -u origin`. Now it'll return us this message with the password in the middle:
 
 ```
 remote: ### Attempting to validate files... ####
