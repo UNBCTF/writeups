@@ -8,61 +8,25 @@ Clone the repository and find the password for the next level.
 
     git
     
-## Solution ##
-
-This level is similar to level 28, however we cannot make another reposity with the name 'repo' and we cannot modify items in the '/tmp' directory. We can add another parameter to the cloning command which effectivley renames the local repository (`git clone ssh://bandit28-git@localhost/home/bandit28-git/repo repo2`). After we clone the repository, we see the 'README.md' file contains:
+Following the same steps from the last two levels, we first need to clone the repo. Next, we can check the contents of the README.md file.
 
 ```
 # Bandit Notes
-Some notes for level29 of bandit.
+Some notes for bandit30 of bandit.
 
 ## credentials
 
-- username: bandit29
-- password: xxxxxxxxxx
+- username: bandit30
+- password: <no passwords in production!>
 ```
 
-After a fair bit of attemping different git commands, trying `git log` seemed to give us useful information. 
+The "no passwords in production" makes me think there must be a developement branch somewhere with the credentials. When we check `git branch`, only 'master' comes up. This is because `git branch` only shows us local branches, not remote branches. Let's check the remote branches with `git branch -r`.
 
 ```
-commit edd935d60906b33f0619605abd1689808ccdd5ee
-Author: Morla Porla <morla@overthewire.org>
-Date:   Thu May 7 20:14:49 2020 +0200
-
-    fix info leak
-
-commit c086d11a00c0648d095d04c089786efef5e01264
-Author: Morla Porla <morla@overthewire.org>
-Date:   Thu May 7 20:14:49 2020 +0200
-
-    add missing data
-
-commit de2ebe2d5fd1598cd547f4d56247e053be3fdc38
-Author: Ben Dover <noone@overthewire.org>
-Date:   Thu May 7 20:14:49 2020 +0200
-
-    initial commit of README.md
+  origin/HEAD -> origin/master
+  origin/dev
+  origin/master
+  origin/sploits-dev
 ```
 
-From the logged changes to the repo we see that the password was previously in the README.md file. Let's use `git log -p | less` to view the changes that each commit introduced.
-
-```
-commit edd935d60906b33f0619605abd1689808ccdd5ee
-Author: Morla Porla <morla@overthewire.org>
-Date:   Thu May 7 20:14:49 2020 +0200
-
-    fix info leak
-
-diff --git a/README.md b/README.md
-index 3f7cee8..5c6457b 100644
---- a/README.md
-+++ b/README.md
-@@ -4,5 +4,5 @@ Some notes for level29 of bandit.
- ## credentials
- 
- - username: bandit29
--- password: bbc96594b4e001778eee9975372716b2
-+- password: xxxxxxxxxx
-```
-
-We can see in this commit that the password of bbc96594b4e001778eee9975372716b2 was removed.
+We can see that there *is* a development branch. Let's switch to it with `git checkout origin/dev`, output the contents of 'README.md', and retrieve the password of 5b90576bedb2cc04c86a9e924ce42faf
