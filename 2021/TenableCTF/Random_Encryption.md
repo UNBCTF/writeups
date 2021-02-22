@@ -79,7 +79,7 @@ So basically this program works in 3 steps:
     
 3. Print out the 'res' list
 
-We need to find a way to recover the flag that was used in generating the sample output. This program uses a psuedo-random number generator, so the numbers aren't actually random. If you're not familair with these, read up on them [here](https://www.geeksforgeeks.org/pseudo-random-number-generator-prng/) There's definitely more efficient ways to do this, but this is the route I went.
+We need to find a way to recover the flag that was used in generating the sample output. This program uses a psuedo-random number generator, so the numbers aren't actually random. If you're not familair with these, read up on them [here](https://www.geeksforgeeks.org/pseudo-random-number-generator-prng/). There's definitely more efficient ways to do this, but this is the route I went.
 
 I used the following python program to generate the first four numbers in sequence for all seeds from 0-10000:
 
