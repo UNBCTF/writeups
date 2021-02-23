@@ -19,7 +19,7 @@ Js rvugn oigvbsf bulibbnjuhs, kkvb pmxcoj oe frjuucguf pvye.
 
 ## Solution ##
 
-Based on the format of the flags and the number of letters, I assumed `Nze szne ug "zdat{qyyegcuvvurlqfy}"` says "The flag is "flag{*flag*}". Using a Vigenere square like the one below, you can find the key by going to the column of the plaintext letter and finding the encrypted letter in that column, which will give the row of the corresponding key letter.  For example, for the encrypted word "Nze", "The" would be the plaintext and "USA" is the corresponding part of the key.
+Based on the format of the flags and the number of letters, I assumed `Nze szne ug "zdat{qyyegcuvvurlqfy}"` says "The flag is "flag{*flag*}"". Using a Vigenere square like the one below, you can find the key by going to the column of the plaintext letter and finding the encrypted letter in that column, which will give the row of the corresponding key letter.  For example, for the encrypted word "Nze", "The" would be the plaintext and "USA" is the corresponding part of the key.
 
 ![Vigenere Square](https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Vigen%C3%A8re_square_shading.svg/1920px-Vigen%C3%A8re_square_shading.svg.png)
 
