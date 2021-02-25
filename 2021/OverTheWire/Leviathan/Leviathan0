@@ -1,0 +1,7 @@
+# Leviathan 0
+
+We were provided with this one, we had to ssh into the leviathan server.
+```
+ssh leviathan0@leviathan.labs.overthewire.org -p 2223
+password: leviathan0
+```
