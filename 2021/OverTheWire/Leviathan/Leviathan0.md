@@ -11,4 +11,4 @@ To find the password for leviathan 1, perform ```ls -la``` on the home directory
 There is a ```.backup``` folder with a file named ```bookmarks.html```. Opening
 this in ```vim``` and searching for "password" produced the key
 
-        ```rioGegei8m```
+        rioGegei8m
