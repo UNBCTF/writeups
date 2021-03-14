@@ -1,6 +1,6 @@
 # The Mission
 
-A linear, story-like challenge. Each solution leads to the next
+A linear, story-like challenge. Each solution leads to the next. Similar to Bandit in that sense.
 
 # 1 - The Mission
 
