@@ -33,6 +33,6 @@ From the source code we can see that the username and password are Tiger128,4 ha
 [This website](https://md5hashing.net/hash/tiger128,4) decrypts the username hash value of `51c3f5f5d8a8830bc5d8b7ebcb5717df` to `admin`.
 It is unable to decrypt the password hash value of `0e132798983807237937411964085731`.
 
-[This website](https://www.whitehatsec.com/blog/magic-hashes/) explains that password hashes in PHP starting with 0e have "magic numbers".  The magic number for Tiger128,4 is `479763000`.
+[This website](https://www.whitehatsec.com/blog/magic-hashes/) explains that hashes in PHP starting with `0e` have "magic numbers".  The magic number for Tiger128,4 is `479763000`.
 
 Using the decrypted username and the "magic number" as the password, we can log in and get the flag `dctf{It's_magic._I_ain't_gotta_explain_shit.}`.
