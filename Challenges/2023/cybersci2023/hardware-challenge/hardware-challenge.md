@@ -175,8 +175,6 @@ After reading the documentation, we found that the language was `AVR8:Little End
 
 ![Ghidra AVR Languages](./images/GhidraAVRLanguages.jpg)
 
-The memory mapping was very messed up, and Ghidra created lots of weird memory segments. This is due to the fact that AVR uses a Harvard architecture, meaning that **the program code and memory are stored in separate physical locations, and have completely different addresses**. This is a nightmare for all pwn people, but it simplifies reversing for us, as we know the code in the flash is the only code that can be ran.
-
 ![Block Diagram](./images/TinyAVRBlockDiagram.jpg)
 
 The SRAM and EEPROM dumps were added into the analysis of the flash in Ghidra via `File > Import File`. Using `Options...`, we could specify the address of the imported file, and input the real addresses of the dumps:
