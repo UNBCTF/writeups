@@ -1,15 +1,10 @@
----
-date: 2023-06-26
-categories:
-  - writeups
-authors:
-  - silk
-  - matt
-tags:
-  - hardware
----
-
 # CyberSci Hardware Challenge
+
+**Date:** June 26, 2023
+
+**Authors:** Stephen White, Matthew Toms-Zuberec
+
+A copy of this writeup is written on [Stephen's blog](https://new.silk.one/).
 
 **Difficulty:** Medium/Hard
 
