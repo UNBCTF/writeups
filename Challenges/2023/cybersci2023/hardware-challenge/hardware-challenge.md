@@ -4,7 +4,7 @@
 
 **Authors:** Stephen White, Matthew Toms-Zuberec
 
-A copy of this writeup is written on [Stephen's blog](http://new.silk.one/blog/2023/06/21/cybersci-hardware-challenge/).
+A copy of this writeup is written on [Stephen's blog](http://new.silk.one/blog/2023/06/26/cybersci-hardware-challenge/).
 
 **Difficulty:** Medium/Hard
 
