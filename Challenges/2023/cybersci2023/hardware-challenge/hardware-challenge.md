@@ -75,7 +75,7 @@ After reading several guides of people looking to program various chips via UPDI
                          GND                   GND
 ```
 
-However, communication using an Arduino was unsuccessful for a various reasons. 
+However, communication using an Arduino was unsuccessful for various reasons. 
 
 Rather than wasting time trying to mimic the required chipset, [this adapter](https://www.amazon.ca/dp/B07WX2DSVB) was purchased off Amazon for around $20 CAD. Yet another reference to asking Jeff Bezos for help.
 
@@ -190,7 +190,7 @@ After importing the SRAM and EEPROM dumps and adjusting the memory mapping, the 
 
 ### Static Analysis? Nah. Let's Emulate it!
 
-There are few ways emulation can be done, however [Cutter](https://github.com/rizinorg/cutter) was used as it was super user-friendly only required a simple installation.
+There are few ways emulation can be done, however, [Cutter](https://github.com/rizinorg/cutter) was used as it was super user-friendly and only required a simple installation.
 
 [simavr](https://github.com/buserror/simavr) was another tool we tried, but it requires you to build/define custom core for emulation. We tried, at first, but Cutter seemed much simpler so we pivoted.
 
@@ -202,7 +202,7 @@ When looking at references to the SRAM in Ghidra, we can see a lot of references
 
 ![Ghidra SRAM References](./images/GhidraSRAMReferences.jpg)
 
-It tooked us a while to realize, but the contents of the SRAM at `x3800`, `x3802`, and `x3804` were addresses to the strings we saw before in little-endian format:
+It took us a while to realize, but the contents of the SRAM at `x3800`, `x3802`, and `x3804` were addresses to the strings we saw before in little-endian format:
 
 * `x3800`: `8fb9`
 * `x3802`: `8fca`
@@ -497,7 +497,7 @@ rng_nums = [next_byte(triplets) for i in range(len(enc))]
 ## These numbers were compared to the output in the emulator to ensure accuracy.
 ```
 
-Each iteration of loop 2 in `RefsJiggy` appended three bytes and each of the three bytes were generated a different way. Therefore, we will need to recover each of these bytes differently. Let's start by separate each of the three bytes from `enc`, and their respective random numbers as well.
+Each iteration of loop 2 in `RefsJiggy` appended three bytes and each of the three bytes were generated a different way. Therefore, we will need to recover each of these bytes differently. Let's start by separating each of the three bytes from `enc`, and their respective random numbers as well.
 
 ```py
 enc_1 = [byte for index, byte in enumerate(enc) if index % 3 == 0] # [161, 56, ...]
